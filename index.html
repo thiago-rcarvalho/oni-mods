@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Plants! - Plants Reference</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 128px;
+            height: auto;
+        }
+        .ingredient-icon {
+            width: 32px;
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        #filter-input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .ingredient-name {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .ingredient-quantity {
+            font-size: 0.9em;
+            /* color: gray; */
+        }
+    </style>
+</head>
+<body>
+    <h1>More Plants! - Plants Reference</h1>
+    <input type="text" id="filter-input" placeholder="Filter by name...">
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Decor</th>
+                <th>Ingredients</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#data-table tbody');
+                data.forEach(item => {
+                    const row = document.createElement('tr');
+                    const ingredients = item.Ingredients.map(ingredient => 
+                        `<li>
+                            <img src="${ingredient.icon}" alt="${ingredient.name}" class="ingredient-icon">
+                            <span class="ingredient-name">${ingredient.name}</span>
+                            <span class="ingredient-quantity">${ingredient.quantity}</span>
+                        </li>`
+                    ).join('');
+                    row.innerHTML = `
+                        <td>${item.Name}</td>
+                        <td><img src="${item.Image}" alt="${item.Name}"></td>
+                        <td>${item.Decor}</td>
+                        <td><ul>${ingredients}</ul></td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+
+                document.getElementById('filter-input').addEventListener('input', function() {
+                    const filter = this.value.toLowerCase();
+                    const rows = tableBody.querySelectorAll('tr');
+                    rows.forEach(row => {
+                        const nameCell = row.querySelector('td').textContent.toLowerCase();
+                        if (nameCell.includes(filter)) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
