@@ -5,8 +5,7 @@
         "Ingredients": [
             {"name": "Copper", "quantity" : "50 kg", "icon": "icons/element-copper.png"},
             {"name": "Wood", "quantity" : "75 kg", "icon": "icons/element-woodlog.png"}
-        ],
-        "Image": "images/1.png"
+        ]
     },
     {
         "Name": "Nosh Sprout",
@@ -15,8 +14,7 @@
             {"name": "Water","quantity" : "50 kg", "icon": "icons/element-water.png"},
             {"name": "Mud","quantity" : "50 kg", "icon": "icons/element-mud.png"},
             {"name": "Wood","quantity" : "75kg", "icon": "icons/element-woodlog.png"}
-        ],
-        "Image": "images/2.png"
+        ]
     },
     {
         "Name": "Bogbucket",
@@ -24,7 +22,6 @@
         "Ingredients": [
             {"name": "Water","quantity" : "50 kg", "icon": "icons/element-water.png"},
             {"name": "Wood","quantity" : "75kg", "icon": "icons/element-woodlog.png"}
-        ],
-        "Image": "images/3.png"
+        ]
     }
 ]

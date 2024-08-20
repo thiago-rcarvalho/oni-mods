@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,41 +71,48 @@
     </table>
 
     <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                const tableBody = document.querySelector('#data-table tbody');
-                data.forEach(item => {
-                    const row = document.createElement('tr');
-                    const ingredients = item.Ingredients.map(ingredient => 
-                        `<li>
-                            <img src="${ingredient.icon}" alt="${ingredient.name}" class="ingredient-icon">
-                            <span class="ingredient-name">${ingredient.name}</span>
-                            <span class="ingredient-quantity">${ingredient.quantity}</span>
-                        </li>`
-                    ).join('');
-                    row.innerHTML = `
-                        <td>${item.Name}</td>
-                        <td><img src="${item.Image}" alt="${item.Name}"></td>
-                        <td>${item.Decor}</td>
-                        <td><ul>${ingredients}</ul></td>
-                    `;
-                    tableBody.appendChild(row);
-                });
+        Promise.all([
+            fetch('data.json').then(response => response.json()),
+            fetch('enum.json').then(response => response.json())
+        ])        
+        .then(([data, enumImageMap]) => {
+            const tableBody = document.querySelector('#data-table tbody');
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.Name}</td>
+                    <td><img src="${enumImageMap[item.Name]}" alt="${item.Name}"></td>
+                    <td>${item.Decor}</td>
+                    
+                    <td>
+                        <table style:''>
+                            ${item.Ingredients.map(ingredient => `
+                                <tr>
+                                    <td><img src="${enumImageMap[ingredient.name]}" alt="${ingredient.name}" class="ingredient-icon"></td>
+                                    <td class="ingredient-name">${ingredient.name}</td>
+                                    <td class="ingredient-quantity">${ingredient.quantity}</td>
+                                </tr>
+                            `).join('')}
+                        </table>
+                    </td>
 
-                document.getElementById('filter-input').addEventListener('input', function() {
-                    const filter = this.value.toLowerCase();
-                    const rows = tableBody.querySelectorAll('tr');
-                    rows.forEach(row => {
-                        const nameCell = row.querySelector('td').textContent.toLowerCase();
-                        if (nameCell.includes(filter)) {
-                            row.style.display = '';
-                        } else {
-                            row.style.display = 'none';
-                        }
-                    });
+                `;
+                tableBody.appendChild(row);
+            });
+
+            document.getElementById('filter-input').addEventListener('input', function() {
+                const filter = this.value.toLowerCase();
+                const rows = tableBody.querySelectorAll('tr');
+                rows.forEach(row => {
+                    const nameCell = row.querySelector('td').textContent.toLowerCase();
+                    if (nameCell.includes(filter)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
                 });
             });
+        });
     </script>
 </body>
 </html>
