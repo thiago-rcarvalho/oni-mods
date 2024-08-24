@@ -1,27 +1,908 @@
 [
     {
-        "Name": "Alveo Vera",
-        "Decor": 30,
-        "Ingredients": [
-            {"name": "Copper", "quantity" : "50 kg", "icon": "icons/element-copper.png"},
-            {"name": "Wood", "quantity" : "75 kg", "icon": "icons/element-woodlog.png"}
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Balm Lily",
+        "icon": "plant-lilly",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Balm Lily Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-lilly"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "15 kg",
+                "miniQuantity": "5 Kg",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 Kg",
+                "icon": "element-woodlog"
+            }
         ]
     },
     {
-        "Name": "Nosh Sprout",
-        "Decor": 25,
-        "Ingredients": [
-            {"name": "Water","quantity" : "50 kg", "icon": "icons/element-water.png"},
-            {"name": "Mud","quantity" : "50 kg", "icon": "icons/element-mud.png"},
-            {"name": "Wood","quantity" : "75kg", "icon": "icons/element-woodlog.png"}
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Bristle Blossom",
+        "icon": "plant-bristle",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Bristle Blossom Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-bristle"
+            },
+            {
+                "name": "Water",
+                "quantity": "15 kg",
+                "miniQuantity": "5 Kg",
+                "icon": "element-water"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 Kg",
+                "icon": "element-woodlog"
+            }
         ]
     },
     {
-        "Name": "Bogbucket",
-        "Decor": 35,
-        "Ingredients": [
-            {"name": "Water","quantity" : "50 kg", "icon": "icons/element-water.png"},
-            {"name": "Wood","quantity" : "75kg", "icon": "icons/element-woodlog.png"}
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Dusk Cap",
+        "icon": "plant-mushroomplant",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Dusk Cap Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-mushroom"
+            },
+            {
+                "name": "Slime",
+                "quantity": "15 kg",
+                "miniQuantity": "5 Kg",
+                "icon": "element-slimemold"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 Kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Hexalent",
+        "icon": "plant-hexalent",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Hexalent Fruit",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-hexalent"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Hydrocactus",
+        "icon": "plant-hydro",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Briar Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-briar"
+            },
+            {
+                "name": "Bog Jelly",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-bogjelly"
+            },
+            {
+                "name": "Water",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-water"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Mealwood",
+        "icon": "plant-mealwood",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Mealwood Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-mealwood"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "15 kg",
+                "miniQuantity": "5 kg",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Swamp Chard",
+        "icon": "plant-swampchard",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Swamp Chard Heart",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-swampchard"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Mud",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-mud"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Thimble Reed",
+        "icon": "plant-thimble",
+        "decor": 10,
+        "ingredients": [
+            {
+                "name": "Thimble Reed Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-thimble"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "15 kg",
+                "miniQuantity": "5 kg",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "dlc-so",
+        "name": "Decor Bog Bucket",
+        "icon": "plant-bogbucket",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Bog Bucket Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-bogbucket"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "35 kg",
+                "miniQuantity": "15 kg",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "25 kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "",
+        "name": "Decor Dasha Saltvine",
+        "icon": "plant-saltplant",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Dasha Saltvine Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-saltplant"
+            },
+            {
+                "name": "Salt",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-salt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Grubfruit Plant",
+        "icon": "plant-grubfruit",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Spindly Grubfruit Plant Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-grubfruit"
+            },
+            {
+                "name": "Sulfur",
+                "quantity": "15 kg",
+                "miniQuantity": "5 kg",
+                "icon": "element-sulfur"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "15 kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "",
+        "name": "Decor Oxyfern",
+        "icon": "plant-oxyfern",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Oxyfern Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-oxyfern"
+            },
+            {
+                "name": "Water",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-water"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "",
+        "name": "Decor Pincha Pepperplant",
+        "icon": "plant-pincha",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Pincha Pepperplant Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-pincha"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Phosphorite",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-phosphorite"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "dlc-so",
+        "name": "Decor Saturn Critter Trap",
+        "icon": "plant-crittertrap",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Saturn Critter Trap Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-crittertrap"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Sleet Wheat",
+        "icon": "plant-sleetwheat",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Sleet Wheat Grain",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-sleetwheat"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Water",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-water"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "",
+        "name": "Decor Waterweed",
+        "icon": "plant-sealettuce",
+        "decor": 10,
+        "ingredients": [
+            {
+                "name": "Waterweed Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-sealettuce"
+            },
+            {
+                "name": "Salt Water",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-salt"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 3,
+        "dlc": "",
+        "name": "Decor Arbor Tree",
+        "icon": "plant-forest-tree",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Arbor Acorn",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-arbor-acorn"
+            },
+            {
+                "name": "Polluted Water",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-water-polluted"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "75 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 3,
+        "dlc": "",
+        "name": "Decor Gas Grass",
+        "icon": "plant-gasgrass",
+        "decor": 25,
+        "ingredients": [
+            {
+                "name": "Gas Grass Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-gas"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "75 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 3,
+        "dlc": "",
+        "name": "Decor Nosh Sprout",
+        "icon": "plant-beanplant",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Nosh Bean",
+                "quantity": "1 unit",
+                "miniQuantity": "1 unit",
+                "icon": "seed-bean"
+            },
+            {
+                "name": "Ethanol",
+                "quantity": "50 kg",
+                "miniQuantity": "25 kg",
+                "icon": "element-ethanol"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "50 kg",
+                "miniQuantity": "25 kg",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "75 kg",
+                "miniQuantity": "35 kg",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "",
+        "name": "Decor Wheezewort",
+        "icon": "plant-wheeze",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Wheezewort Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-wheeze"
+            },
+            {
+                "name": "Phosphorite",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-phosphorite"
+            },
+            {
+                "name": "Ice",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 3,
+        "dlc": "",
+        "name": "Decor Palmera Tree",
+        "icon": "plant-palmera",
+        "decor": 20,
+        "ingredients": [
+            {
+                "name": "Gristle Berry",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-gristle"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "75 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-fp",
+        "name": "Decor Alveo Vera",
+        "icon": "plant-alveo",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Alveo Vera Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-alveo"
+            },
+            {
+                "name": "Ice",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice"
+            },
+            {
+                "name": "Oxylite",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-oxylite"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-fp",
+        "name": "Decor Pikeapple Bush",
+        "icon": "plant-pikeapple",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Pikeapple Bush Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-pikeapple"
+            },
+            {
+                "name": "Ice",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice"
+            },
+            {
+                "name": "Oxylite",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-oxylite"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 2,
+        "dlc": "dlc-fp",
+        "name": "Decor Plume Squash Plant",
+        "icon": "plant-plume",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Plume Squash Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-plume"
+            },
+            {
+                "name": "Ice",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice"
+            },
+            {
+                "name": "Ethanol",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-ethanol"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-fp",
+        "name": "Decor Idylla Flower",
+        "icon": "plant-idylla",
+        "decor": 25,
+        "ingredients": [
+            {
+                "name": "Idylla Flower Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-idylla"
+            },
+            {
+                "name": "Polluted Ice",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Tranquil Toes",
+        "icon": "plant-tranquil",
+        "decor": 25,
+        "ingredients": [
+            {
+                "name": "Tranquil Toes Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-tranquil"
+            },
+            {
+                "name": "Polluted Mud",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-mud-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Sporechid",
+        "icon": "plant-sporechid",
+        "decor": 80,
+        "ingredients": [
+            {
+                "name": "Sporechid Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-sporechid"
+            },
+            {
+                "name": "Fossil",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-fossil"
+            },
+            {
+                "name": "Oil",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-oil"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Buried Muckroot",
+        "icon": "plant-muckroot",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Muckroot",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-muckroot"
+            },
+            {
+                "name": "Briar Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-briar"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "",
+        "name": "Decor Fervine",
+        "icon": "plant-fervine",
+        "decor": 20,
+        "ingredients": [
+            {
+                "name": "Muckroot",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-muckroot"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Dirt",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-fp",
+        "name": "Decor Sherberry Plant",
+        "icon": "plant-sherberry",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Sherberry",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-sherberry"
+            },
+            {
+                "name": "Polluted Ice",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-ice-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
         ]
     }
 ]

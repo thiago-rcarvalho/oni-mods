@@ -6,18 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More Plants! - Plants Reference</title>
     <style>
+        header {
+            padding: 20px;
+            color: #fff;
+        }
+
+        .logo {
+            max-width: 300px;
+        }
+        body {
+            /* background-color: #4e697d; */
+            background-color: #1b2838;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
+        
+        .table-ingredient {
+            border: #000;
         }
         th {
-            background-color: #f2f2f2;
+            border: 1px solid rgb(185, 184, 184);
+            padding: 8px;
+            text-align: left;
+            color: #5aa9d6;
         }
+        td {
+            border: 1px solid rgb(185, 184, 184);
+            padding: 8px;
+            text-align: left;
+            color: #fff;
+        }
+        td.fitwidth {
+            width: 1px;
+            white-space: nowrap;
+        }
+        td.noborder {
+            border: none;
+        }
+        th.noborder {
+            border: none;
+        }
+        /* th {
+            background-color: #f2f2f2;
+        } */
         img {
             max-width: 128px;
             height: auto;
@@ -28,10 +62,20 @@
             margin-right: 5px;
             vertical-align: middle;
         }
+        
+        .decor-icon {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
         #filter-input {
             margin-bottom: 10px;
             padding: 5px;
             width: 100%;
+            background-color: #0D121A;
+            color: #fff;
         }
         ul {
             list-style-type: none;
@@ -44,18 +88,33 @@
             margin-bottom: 10px;
         }
 
-        .ingredient-name {
-            font-weight: bold;
-            margin-right: 5px;
+        .image-container {
+            position: relative;
+            display: inline-block;
         }
-        .ingredient-quantity {
-            font-size: 0.9em;
-            /* color: gray; */
+
+        .base-image {
+            display: block;
+            margin: auto;
         }
+
+        .overlay-image {
+            position: absolute; 
+            bottom: 0; 
+            right: 0; 
+            max-width: 64px;
+            margin: 5px
+        }
+
     </style>
 </head>
 <body>
-    <h1>More Plants! - Plants Reference</h1>
+    <header>
+        <img src="/images/logo.png" alt="logo.png" class="logo">
+        <h1>List of Decorative Plants</h1>
+        <p>All available Decorative Plants provided by More Plants! Mod</p>
+        <p><a style="color: #5aa9d6;" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2819853217">Steam Workshop link</a></p>
+    </header>
     <input type="text" id="filter-input" placeholder="Filter by name...">
     <table id="data-table">
         <thead>
@@ -63,7 +122,7 @@
                 <th>Name</th>
                 <th>Image</th>
                 <th>Decor</th>
-                <th>Ingredients</th>
+                <th>Recipe</th>
             </tr>
         </thead>
         <tbody>
@@ -77,20 +136,38 @@
         ])        
         .then(([data, enumImageMap]) => {
             const tableBody = document.querySelector('#data-table tbody');
+
+            data.sort((a, b)=> (a.tier - b.tier || a.name.localeCompare(b.name)));
+
             data.forEach(item => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${item.Name}</td>
-                    <td><img src="${enumImageMap[item.Name]}" alt="${item.Name}"></td>
-                    <td>${item.Decor}</td>
+                    <td>${item.name}</td>
+
+                    <td style="text-align: center; vertical-align: middle; position: relative;"">
+                        <div class="image-container">
+                            <img src="${enumImageMap[item.icon]}" alt="${item.name}" class="base-image">
+                        </div>
+                        <img src="${enumImageMap[item.dlc]}" class="overlay-image" onerror="this.style.display='none'">
+                    </td>
+
+                    <td class="fitwidth"><img src="/icons/crew_state_decor.png" alt="decor" class="decor-icon"> ${item.decor}</td>
                     
                     <td>
-                        <table style:''>
-                            ${item.Ingredients.map(ingredient => `
+                        <table>
+                            <thead>
                                 <tr>
-                                    <td><img src="${enumImageMap[ingredient.name]}" alt="${ingredient.name}" class="ingredient-icon"></td>
-                                    <td class="ingredient-name">${ingredient.name}</td>
-                                    <td class="ingredient-quantity">${ingredient.quantity}</td>
+                                    <th colspan="2" class="noborder"></th>
+                                    <th class="noborder">Normal</th>
+                                    <th class="noborder">Mini</th>
+                                </tr>
+                            </thead>
+                            ${item.ingredients.map(ingredient => `
+                                <tr>
+                                    <td class="fitwidth noborder"><img src="${enumImageMap[ingredient.icon]}" alt="${ingredient.icon}" class="ingredient-icon"></td>
+                                    <td class="fitwidth noborder">${ingredient.name}</td>
+                                    <td class="fitwidth noborder">${ingredient.quantity}</td>
+                                    <td class="noborder">${ingredient.miniQuantity}</td>
                                 </tr>
                             `).join('')}
                         </table>
