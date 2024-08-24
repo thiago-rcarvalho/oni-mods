@@ -181,8 +181,8 @@
                 const filter = this.value.toLowerCase();
                 const rows = tableBody.querySelectorAll('tr');
                 rows.forEach(row => {
-                    const nameCell = row.querySelector('td').textContent.toLowerCase();
-                    if (nameCell.includes(filter)) {
+                    const nameCell = row.querySelector('td');
+                    if (nameCell && nameCell.textContent.toLowerCase().includes(filter)) {
                         row.style.display = '';
                     } else {
                         row.style.display = 'none';
