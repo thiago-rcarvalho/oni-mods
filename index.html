@@ -181,12 +181,18 @@
             document.getElementById('filter-input').addEventListener('input', function() {
                 const filter = this.value.toLowerCase();
                 const rows = tableBody.querySelectorAll('tr');
+
                 rows.forEach(row => {
-                    const nameCell = row.querySelector('td');
-                    if (nameCell && nameCell.textContent.toLowerCase().includes(filter)) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
+                    const isMainTableRow = row.closest('table') && row.closest('table').id === 'data-table';
+
+                    if (isMainTableRow) {
+                        const nameCell = row.querySelector('td');
+
+                        if (nameCell && nameCell.textContent.toLowerCase().includes(filter)) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
                     }
                 });
             });
