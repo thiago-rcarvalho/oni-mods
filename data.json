@@ -880,26 +880,275 @@
     },
     {
         "tier": 1,
-        "dlc": "dlc-fp",
-        "name": "Decor Sherberry Plant",
-        "icon": "plant-sherberry",
+        "dlc": "dlc-pp",
+        "name": "Decor Mimika Bud",
+        "icon": "plant-mimika",
         "decor": 15,
         "ingredients": [
             {
-                "name": "Sherberry",
+                "name": "Mimillet",
                 "quantity": "1 unit",
                 "miniQuantity": "-",
-                "icon": "food-sherberry"
+                "icon": "seed-mimika"
             },
             {
-                "name": "Polluted Ice",
+                "name": "Dirt",
                 "quantity": "15 kg",
                 "miniQuantity": "-",
-                "icon": "element-ice-polluted"
+                "icon": "element-dirt"
             },
             {
                 "name": "Lumber",
                 "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Sweatcorn Stalk",
+        "icon": "plant-sweatcorn",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": " Sweatcorn Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-sweatcorn"
+            },
+            {
+                "name": "Peat",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-peat"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Ovagro Node Simple<br><i>(Has no branches)",
+        "icon": "plant-ovagro",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": " Ovagro Node Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-ovagro"
+            },
+            {
+                "name": "Water",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-water"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Snactus",
+        "icon": "plant-snactus",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Snac Fruit",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "food-snac"
+            },
+            {
+                "name": "Peat",
+                "quantity": "15 kg",
+                "miniQuantity": "-",
+                "icon": "element-peat"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Ring Rosebush",
+        "icon": "plant-rosebush",
+        "decor": 25,
+        "ingredients": [
+            {
+                "name": "Rosebush Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-rosebush"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Dew Dripper",
+        "icon": "plant-dewdripper",
+        "decor": 10,
+        "ingredients": [
+            {
+                "name": "Dew Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-dewdripper"
+            },
+            {
+                "name": "Brine Ice",
+                "quantity": "15 Kg",
+                "miniQuantity": "-",
+                "icon": "element-ice-brine"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Megafrond",
+        "icon": "plant-megafrond",
+        "decor": 0,
+        "ingredients": [
+            {
+                "name": "Megafrond Spore",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-megafrond"
+            },
+            {
+                "name": "Bleach Stone",
+                "quantity": "35 Kg",
+                "miniQuantity": "-",
+                "icon": "element-bleachstone"
+            },
+            {
+                "name": "Ice",
+                "quantity": "35 Kg",
+                "miniQuantity": "-",
+                "icon": "element-ice"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "50 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Seakomb",
+        "icon": "plant-seakomb",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Seakomb Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-seakomb"
+            },
+            {
+                "name": "Polluted Dirt",
+                "quantity": "15 Kg",
+                "miniQuantity": "-",
+                "icon": "element-dirt-polluted"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-pp",
+        "name": "Decor Lura Plant",
+        "icon": "plant-lura",
+        "decor": 15,
+        "ingredients": [
+            {
+                "name": "Lura Seed",
+                "quantity": "1 unit",
+                "miniQuantity": "-",
+                "icon": "seed-lura"
+            },
+            {
+                "name": "Algae",
+                "quantity": "15 Kg",
+                "miniQuantity": "-",
+                "icon": "element-algae"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "35 kg",
+                "miniQuantity": "-",
+                "icon": "element-woodlog"
+            }
+        ]
+    },
+    {
+        "tier": 1,
+        "dlc": "dlc-so",
+        "name": "Decor Experiment 52B",
+        "icon": "plant-experiment52b",
+        "decor": 35,
+        "ingredients": [
+            {
+                "name": "Arbor Acorn",
+                "quantity": "5 units",
+                "miniQuantity": "-",
+                "icon": "seed-arbor-acorn"
+            },
+            {
+                "name": "Plastic",
+                "quantity": "100 Kg",
+                "miniQuantity": "",
+                "icon": "element-plastic"
+            },
+            {
+                "name": "Slime",
+                "quantity": "100 Kg",
+                "miniQuantity": "-",
+                "icon": "element-slimemold"
+            },
+            {
+                "name": "Lumber",
+                "quantity": "150 kg",
                 "miniQuantity": "-",
                 "icon": "element-woodlog"
             }
